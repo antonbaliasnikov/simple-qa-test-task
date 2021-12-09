@@ -1,0 +1,10 @@
+name: Integration Tests
+on:
+  push:
+    branches:
+      - master
+jobs:
+  Execute-Integration-Tests:
+  runs-on: ubuntu-latest
+  steps:
+    - run: ./simple-calc-test-runner --run integrationtests --reports-dir integration-test-reports
