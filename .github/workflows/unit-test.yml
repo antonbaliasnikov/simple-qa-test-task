@@ -5,6 +5,6 @@ on:
       - master
 jobs:
   Execute-Unit-Tests:
-  runs-on: ubuntu-latest
-  steps:
-    - run: ./simple-calc-test-runner --run unittests --reports-dir unit-test-reports
+    runs-on: ubuntu-latest
+    steps:
+      - run: ./simple-calc-test-runner --run unittests --reports-dir unit-test-reports
