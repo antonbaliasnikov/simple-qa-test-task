@@ -7,4 +7,5 @@ jobs:
   Execute-Integration-Tests:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - run: ./simple-calc-test-runner --run integrationtests --reports-dir integration-test-reports
